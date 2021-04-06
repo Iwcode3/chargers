@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <h1>Chargers fans polls</h1>
+</head>
+<nav>
+    <ul>
+        <a href="./index.html"><li>Home</li></a>
+        <a href="./form.html"><li>Polls</li></a>
+    </ul>
+</nav>
+<hr>
+<body>
+    <img src="images/logo.jpg" alt="chargers logo"/>
+</body>
+<hr>
+<form action="submission.html" method="POST">
+    <section>
+        <label for="polls">Most impactful signee?</label>
+        <select name="polls" id="polls">
+            <option value="Oday">OdayAboushi</option>
+            <option value="Jared">Jared Cook</option>
+            <option value="Matt">Matt Feiler</option>
+        </select>
+    </section>
+    <br>
+    <section class="regret">
+        <span>Which player will the team regret relasing?</span>
+        <input type="checkbox" name="regret" id="regret" value="Casey">
+        <label for="Casey">Casey Heyward</label>
+        <input type="checkbox" name="regret" id="regret" value="Trai">
+        <label for="Trai">Trai Turner</label>
+        <input type="checkbox" name="regret" id="regret" value="Rayshawn">
+        <label for="Rayshawn">Rayshawn Jenkins</label>
+        
+    </section>
+    <br>
+    <section>
+        <label for="why">Who and why wil they regret relasing?</label>
+        <input type="Post" name="why" id="why" pattern="[a-zA-Z]+" required>
+    </section>
+    <br>
+    <section class="games">
+        <p>Will the chargers win more games next season?</p>
+        <label for="yes">yes</label>
+        <input type="radio" name="games" id="yes" value="yes">
+        <label for="no">no</label>
+        <input type="radio" name="games" id="no" value="no">
+    </section>
+    <br>
+    <section>
+        <label for="prediction">How many games will the chargers win next season</label>
+        <input type="number" name="prediction" id="prediction" min="1" max="16" required>
+    </section>
+    <br>
+    <section>
+        <input type="submit" value="submit">
+    </section>
+</form>
